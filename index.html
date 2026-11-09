@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portfólio de Camilly Lima: analista de Growth e Dados com atuação em testes e QA, usando Python e automação.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Camilly Lima — Growth, Dados e QA">
+<meta property="og:description" content="Estudante de Ciência da Computação e analista de Growth e Dados com atuação em testes e QA. Casos, skills e entregas.">
+<title>Camilly Lima — Growth, Dados e QA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1ece1;--ink:#17150f;--mut:#6a645a;--line:#17150f;--soft:#d9d2c3;--hi:#ff5a1f;--code:#17150f;--codeink:#f1ece1;--ok:#1d7a46;--wip:#b45309;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--serif:"Fraunces",Georgia,"Times New Roman",serif;--mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12110e;--ink:#efe9da;--mut:#9d9686;--line:#efe9da;--soft:#2c2a24;--hi:#ff7a45;--code:#1d1b16;--codeink:#efe9da;--ok:#5fd18d;--wip:#f5b04a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12110e;--ink:#efe9da;--mut:#9d9686;--line:#efe9da;--soft:#2c2a24;--hi:#ff7a45;--code:#1d1b16;--codeink:#efe9da;--ok:#5fd18d;--wip:#f5b04a;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--serif)}
+.w{max-width:960px;margin:0 auto;padding:0 22px}
+.mono{font-family:var(--mono)}
+.top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--line);padding:16px 0;font:12px var(--mono);text-transform:uppercase;letter-spacing:.08em}
+h1{font-size:clamp(44px,9vw,92px);line-height:.95;margin:44px 0 14px;letter-spacing:-.03em;font-weight:700}
+h1 em{font-style:normal;background:var(--hi);color:#17150f;padding:0 .12em}
+.lead{font-size:clamp(18px,2.4vw,22px);max-width:640px;margin:0 0 28px}
+pre{background:var(--code);color:var(--codeink);font:13px/1.7 var(--mono);padding:20px 22px;margin:0 0 8px;overflow-x:auto;border-left:6px solid var(--hi)}
+pre .k{color:var(--hi)}
+pre .c{color:#8d8677}
+section{margin-top:64px}
+.h{display:flex;align-items:baseline;gap:14px;border-top:2px solid var(--line);padding-top:10px;margin-bottom:22px}
+.h span{font:12px var(--mono);color:var(--hi);font-weight:600}
+h2{font-size:30px;margin:0;letter-spacing:-.01em}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{font:11px var(--mono);text-transform:uppercase;letter-spacing:.08em;text-align:left;color:var(--mut);padding:8px 10px 8px 0;border-bottom:1px solid var(--line)}
+td{padding:12px 10px 12px 0;border-bottom:1px solid var(--soft);vertical-align:top}
+td:first-child{font:600 14px var(--mono);white-space:nowrap}
+.tw{overflow-x:auto}
+.st{font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
+.st.ok{color:var(--ok)}.st.wip{color:var(--wip)}
+.pri td:first-child{color:var(--hi)}
+details{border-top:1px solid var(--line)}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:baseline;padding:16px 0}
+summary::-webkit-details-marker{display:none}
+summary .id{font:600 12px var(--mono);color:var(--hi)}
+summary .t{font-size:19px;font-weight:700}
+details[open] summary .t{color:var(--hi)}
+.b{padding:0 0 22px 76px;max-width:760px}
+.b p{margin:0 0 10px}
+.b ul{margin:6px 0 0;padding-left:18px}
+.b li{margin:4px 0}
+.lbl{font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin-top:12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.two h3{font:600 12px var(--mono);text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px;color:var(--hi)}
+.two p{margin:0 0 6px}
+a{color:var(--hi);text-decoration:none;border-bottom:1px solid var(--hi)}
+.chips{margin-top:16px;display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font:11px var(--mono);border:1px solid var(--line);padding:2px 8px}
+footer{margin:72px 0 0;border-top:2px solid var(--line);padding:18px 0 48px;font:13px var(--mono)}
+@media(max-width:640px){summary{grid-template-columns:48px 1fr}summary .st{grid-column:2}.b{padding-left:0}.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="w">
+<div class="top"><span>Portfólio · 2026</span><span>Growth · Dados · QA · Python</span></div>
+
+<h1>Camilly<br><em>Lima</em></h1>
+<p class="lead">Estudante de Ciência da Computação e analista de <strong>Growth e Dados com atuação em testes e QA</strong>. Desenho, executo e valido testes com impacto medido em receita, e uso Python e automação para tornar a qualidade verificável.</p>
+
+<pre><span class="c"># perfil.py</span>
+perfil = {
+    <span class="k">"foco"</span>:      <span class="k">"Growth, dados e QA (testes e validação)"</span>,
+    <span class="k">"linguagem"</span>: <span class="k">"Python"</span>,
+    <span class="k">"formação"</span>:  <span class="k">"Ciência da Computação (cursando)"</span>,
+    <span class="k">"atuação"</span>:   <span class="k">"Performance e Growth, testes A/B e QA de dados"</span>,
+    <span class="k">"stack"</span>:     [<span class="k">"Python"</span>, <span class="k">"SQL"</span>, <span class="k">"n8n"</span>, <span class="k">"Excel avançado"</span>, <span class="k">"VS Code"</span>],
+}</pre>
+
+<section>
+<div class="h"><span>01</span><h2>Skills</h2></div>
+<div class="tw"><table>
+<tr><th>Skill</th><th>Onde aplico</th><th>Status</th></tr>
+<tr class="pri"><td>Python</td><td>Monitoria de qualidade com transcrição de áudio das ligações de cobrança; tratamento de dados</td><td><span class="st wip">Em uso e em evolução</span></td></tr>
+<tr class="pri"><td>QA de dados</td><td>Validação de hipóteses por recorte, critérios de sucesso, análise de riscos antes de escalar, relatório de fechamento de teste</td><td><span class="st ok">Prática diária</span></td></tr>
+<tr><td>Automação de testes</td><td>Evolução do que já valido manualmente: levar os critérios de teste para código em Python</td><td><span class="st wip">Em estudo</span></td></tr>
+<tr><td>SQL</td><td>Queries que alimentam disparos automáticos e bases de análise</td><td><span class="st ok">Em uso</span></td></tr>
+<tr><td>n8n</td><td>Fluxos de WhatsApp e e-mail, validação de números alcançados, alertas de falha</td><td><span class="st ok">Em uso</span></td></tr>
+<tr><td>Excel avançado</td><td>Análise de resultados e planilhas padronizadas de acompanhamento</td><td><span class="st ok">Em uso</span></td></tr>
+<tr><td>Documentação</td><td>Documentação descritiva e storytelling padronizado de testes; biblioteca de aprendizados</td><td><span class="st ok">Em uso</span></td></tr>
+<tr><td>Modelagem de dados</td><td>Estrutura do banco de dados do projeto acadêmico ValiFood</td><td><span class="st ok">Entregue</span></td></tr>
+<tr><td>VS Code, Metabase, Chatwoot</td><td>Ambiente de desenvolvimento, painéis e atendimento</td><td><span class="st ok">Em uso</span></td></tr>
+</table></div>
+</section>
+
+<section>
+<div class="h"><span>02</span><h2>Casos e entregas</h2></div>
+
+<details open>
+<summary><span class="id">QA-01</span><span class="t">Monitoria de qualidade com transcrição de áudio</span><span class="st wip">Em andamento</span></summary>
+<div class="b">
+<div class="lbl">Contexto</div>
+<p>A operação de cobrança faz ligações com abordagens diferentes, e nos testes da régua vi que a forma de abrir a conversa muda o resultado: ligações que começam por engajamento (perguntar do acesso ao curso antes de falar da parcela) mantêm o cliente mais tempo na linha e, na maioria dos casos, terminam em negociação.</p>
+<div class="lbl">O que estou construindo</div>
+<p>Uma monitoria que transcreve o áudio das ligações com Python e transforma a conversa em texto analisável, para avaliar a qualidade das ligações com critérios definidos e comparáveis, em vez de depender só da escuta individual.</p>
+<div class="lbl">Critérios em definição</div>
+<ul><li>Abertura da ligação: houve engajamento antes de informar a dívida?</li><li>Clareza da oferta e das condições de pagamento</li><li>Tempo de permanência do cliente na linha e desfecho (acordo ou não)</li></ul>
+<div class="lbl">Por que é QA</div>
+<p>É a mesma lógica de teste que já pratico: critério de sucesso claro, evidência coletada de forma padronizada e leitura por recorte. A diferença é que agora a coleta e a checagem passam a ser feitas por código.</p>
+<div class="chips"><span>Python</span><span>Transcrição de áudio</span><span>Critérios de qualidade</span><span>Análise de dados</span></div>
+</div>
+</details>
+<details>
+<summary><span class="id">QA-02</span><span class="t">Antecipação de riscos em testes</span><span class="st ok">Em prática</span></summary>
+<div class="b">
+<div class="lbl">Problema</div>
+<p>Um teste de cobrança mal delimitado pode gerar atrito com o cliente e efeito fora do planejado em outras áreas.</p>
+<div class="lbl">Processo que adotei</div>
+<ul><li><strong>Antes do teste:</strong> alinho com as áreas impactadas e defino o escopo</li><li><strong>Durante o teste:</strong> acompanho resposta, pagamento e reclamações (atendimento e canais públicos) por perfil e por janela de atraso, para perceber cedo qualquer atrito</li><li><strong>Antes de escalar:</strong> valido por recorte de atraso, porque o que funciona em um perfil pode falhar em outro</li></ul>
+<div class="lbl">Resultado</div>
+<p>Decisões de escala baseadas em evidência, como posicionar o cartão como canal secundário em vez de escalar sem prova. O aprendizado mais valioso foi mapear dependências de outras áreas desde o início.</p>
+<div class="chips"><span>Plano de teste</span><span>Análise de risco</span><span>Monitoramento</span><span>Comunicação entre áreas</span></div>
+</div>
+</details>
+<details>
+<summary><span class="id">GR-01</span><span class="t">Validação da régua de comunicação multicanal</span><span class="st ok">Validado</span></summary>
+<div class="b">
+<div class="lbl">Contexto</div>
+<p>Squad responsável por reduzir a inadimplência da primeira parcela. Eu era a analista de performance da squad.</p>
+<div class="lbl">Hipótese</div>
+<p>Combinar cobrança com reengajamento no curso atrai mais pagamentos e mais engajamento do que cobrar de forma genérica.</p>
+<div class="lbl">O que fiz</div>
+<ul><li>Estruturei comunicações em vários canais para testar abordagens com diferentes perfis</li><li>Segmentei disparos e acionamentos a partir do qualitativo coletado e das janelas de atraso</li><li>Alinhei previamente as áreas impactadas e acompanhei respostas durante o teste</li></ul>
+<div class="lbl">Resultado</div>
+<ul><li><strong>Redução de cerca de 30% (relativa)</strong> na inadimplência da primeira parcela</li><li>Copies preventivas com valor e vencimento claros funcionam como lembrete e como cobrança</li><li>Desconto atrai pagamentos antecipados, e consegui identificar os perfis que optam por ele</li><li>Remover juros nos primeiros dias reteve os pagamentos de clientes “esquecidos” (pagam de 1 a 7 dias após o vencimento); a regra foi levada para a operação</li></ul>
+<div class="lbl">Aprendizado</div>
+<p>Teste com leitura rápida e que pode virar processo permanente tem mais valor do que teste isolado.</p>
+<div class="chips"><span>Teste A/B</span><span>Segmentação por perfil</span><span>Análise de resultados</span><span>Relatório de fechamento</span></div>
+</div>
+</details>
+<details>
+<summary><span class="id">AU-01</span><span class="t">Automação de disparos e documentação de testes</span><span class="st ok">Em produção</span></summary>
+<div class="b">
+<div class="lbl">Problema</div>
+<p>Disparos manuais, documentação que consumia tempo a cada teste e aprendizados espalhados.</p>
+<div class="lbl">O que fiz</div>
+<ul><li>Redesenhei o processo de disparos de WhatsApp no n8n</li><li>Criei fluxos de disparo de e-mail e a validação dos números que receberam ou não a mensagem</li><li>Com o time de planejamento, montei um fluxo automático para as bases da cobrança: agendamento no dia anterior e disparo a partir de queries SQL no Metabase</li><li>Automatizei a documentação dos testes com um storytelling aprovado, adicionando só o contexto de negócio de cada teste</li><li>Construí com a squad uma biblioteca de copies com os aprendizados por perfil</li></ul>
+<div class="lbl">Falhas e aprendizados</div>
+<ul><li>Errei a disposição de nós e a lógica de um fluxo e entendi que a automação deve refletir o contexto de negócio, sem cobrir caminhos que não são usados, o que reduz custo e deixa o processo mais ágil</li><li>Em disparos com variáveis em contextos diferentes da mensagem, precisei adaptar o fluxo, revisar a documentação da ferramenta e validar o processo antes de cada acionamento</li><li>O fluxo de e-mail com validação de número na Meta ficou desenhado, mas dependia de validação da TI e não avançou; aprendi a mapear dependências desde o início</li></ul>
+<div class="lbl">Próximos passos mapeados</div>
+<ul><li>Alertas no n8n para falha de disparo e números inválidos</li><li>Relatório automático dos acionamentos e retornos por grupo (hoje feito manualmente, tag por tag)</li><li>Dashboard de acompanhamento dos testes, alimentado por planilhas padronizadas</li></ul>
+<div class="lbl">Trade-off</div>
+<p>Dediquei tempo à estrutura em vez de rodar mais testes no período, para que cada teste novo custe menos e os aprendizados fiquem registrados.</p>
+<div class="chips"><span>n8n</span><span>SQL</span><span>Metabase</span><span>Documentação</span><span>Automação de processos</span></div>
+</div>
+</details>
+<details>
+<summary><span class="id">GR-02</span><span class="t">Renegociação com desconto e boleto</span><span class="st ok">Validado</span></summary>
+<div class="b">
+<div class="lbl">Hipótese</div>
+<p>A oferta certa, no momento e no canal certos, converte mais acordos sem prejudicar a receita.</p>
+<div class="lbl">Resultados</div>
+<ul><li><strong>Desconto reparcelado</strong> funciona em atrasos acima de 3 meses, com a mensagem de que o valor original retorna se não houver pagamento (já aplicado na operação)</li><li><strong>Contato proativo no chat do portal de renegociação</strong> gera mais negociações, porque o aluno já chega com a opção disponível e permanece mais tempo no portal</li><li><strong>Boleto que impacta a rolagem</strong> é efetivo para atrasos de até 1 ano, em especial abaixo de 6 meses</li></ul>
+<div class="chips"><span>Teste A/B</span><span>Análise por aging</span><span>Negociação</span><span>Dados</span></div>
+</div>
+</details>
+<details>
+<summary><span class="id">GR-03</span><span class="t">Cartão de crédito como meio secundário</span><span class="st ok">Validado</span></summary>
+<div class="b">
+<div class="lbl">Hipótese</div>
+<p>O cartão pode ser uma alternativa de pagamento tanto para quitação quanto para uma única parcela vencida.</p>
+<div class="lbl">Método e decisão</div>
+<p>Múltiplos testes em diferentes faixas de atraso. A decisão foi posicionar o cartão como <strong>canal secundário de receita</strong>, em vez de escalar sem evidência.</p>
+<div class="chips"><span>Teste por recorte</span><span>Decisão baseada em dados</span></div>
+</div>
+</details>
+<details>
+<summary><span class="id">GR-04</span><span class="t">Abordagens para cursos de autodesenvolvimento</span><span class="st ok">Validado</span></summary>
+<div class="b">
+<div class="lbl">Hipótese</div>
+<p>Mensagens centradas no curso engajam mais do que mensagens genéricas de cobrança.</p>
+<div class="lbl">Resultado</div>
+<p>Validado com um curso parceiro do segmento: a diferença foi mais forte em cursos de autodesenvolvimento. O aprendizado virou uma biblioteca de copies por perfil, usada pela squad.</p>
+<div class="chips"><span>Copywriting</span><span>Teste A/B</span><span>Biblioteca de aprendizados</span></div>
+</div>
+</details>
+<details>
+<summary><span class="id">DA-01</span><span class="t">Reposicionamento do score de pagamento futuro</span><span class="st ok">Decisão de dados</span></summary>
+<div class="b">
+<div class="lbl">Contexto</div>
+<p>Um modelo interno de score estava sendo lido pelo time como se fosse equivalente a um score de bureau de crédito.</p>
+<div class="lbl">Decisão</div>
+<p>Passei a tratá-lo como <strong>motor de pagamento futuro</strong>, o que mudou a leitura do time sobre como e onde usá-lo.</p>
+<div class="chips"><span>Modelagem</span><span>Análise de quadrantes</span><span>Leitura de dados</span></div>
+</div>
+</details>
+<details>
+<summary><span class="id">OP-01</span><span class="t">Continuidade da operação durante uma transição</span><span class="st ok">Entregue</span></summary>
+<div class="b">
+<div class="lbl">Situação</div>
+<p>Um time responsável pelos disparos da cobrança estava em transição e a operação não podia parar.</p>
+<div class="lbl">O que fiz</div>
+<ul><li>Ensinei os processos de disparo e o impacto de cada um</li><li>Executei os disparos por alguns dias até a transição se concluir, sem deixar de cumprir minhas funções</li><li>Documentei o processo para que não dependesse de uma pessoa</li></ul>
+<div class="lbl">Aprendizado</div>
+<p>Priorizar e comunicar limites de capacidade.</p>
+<div class="chips"><span>Priorização</span><span>Documentação</span><span>Comunicação</span></div>
+</div>
+</details>
+<details>
+<summary><span class="id">AC-01</span><span class="t">ValiFood: aplicativo contra o desperdício de alimentos</span><span class="st ok">Projeto acadêmico</span></summary>
+<div class="b">
+<div class="lbl">Contexto</div>
+<p>Projeto em grupo de Ciência da Computação: o app lê o código de barras do produto e avisa o usuário antes do vencimento, para reduzir o desperdício de alimentos.</p>
+<div class="lbl">Minha parte</div>
+<ul><li>Responsável pela estrutura do banco de dados</li><li>Modelo relacional com tabelas de usuários, categorias, produtos e notificações</li><li>Relacionamentos 1:N com chaves primárias e estrangeiras</li></ul>
+<div class="chips"><span>Modelagem de dados</span><span>Banco de dados relacional</span><span>Trabalho em equipe</span></div>
+</div>
+</details>
+</section>
+
+<section>
+<div class="h"><span>03</span><h2>Growth e QA: a mesma lógica</h2></div>
+<div class="tw"><table>
+<tr><th>No Growth</th><th>Em QA</th></tr>
+<tr><td>Desenhar hipótese e teste A/B</td><td>Plano de teste com critério de sucesso claro</td></tr>
+<tr><td>Definir escopo e alinhar áreas impactadas</td><td>Escopo de teste e análise de impacto</td></tr>
+<tr><td>Validar por recorte antes de escalar</td><td>Cobertura por cenário e perfil</td></tr>
+<tr><td>Acompanhar resposta e reclamações no teste</td><td>Monitoramento e detecção precoce de defeitos</td></tr>
+<tr><td>Fechar o teste com relatório padronizado</td><td>Relatório de teste e rastreabilidade</td></tr>
+<tr><td>Mapear dependências entre áreas</td><td>Gestão de riscos e dependências</td></tr>
+<tr><td>Alertas de falha de disparo no n8n</td><td>Testes automatizados e alertas de regressão</td></tr>
+</table></div>
+</section>
+
+<section>
+<div class="h"><span>04</span><h2>Formação e estudos</h2></div>
+<div class="two">
+<div><h3>Formação</h3><p>Ciência da Computação (graduação)</p><p>AWS Cloud</p><p>AWS IA Generativa</p><p>Analista de Dados (EBAC)</p><p>Power BI &amp; IA (EBAC)</p></div>
+<div><h3>Em estudo agora</h3><p>Python com foco em tratamento de dados</p><p>Algoritmos e automação de testes</p></div>
+</div>
+</section>
+
+<footer>
+<a href="https://www.linkedin.com/in/camilly-lima-4b3a8734b/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/camilly1lima" target="_blank" rel="noopener">GitHub</a> · <a href="mailto:camilly.victoria.jobs@gmail.com">camilly.victoria.jobs@gmail.com</a>
+</footer>
+</div>
+</body>
+</html>
